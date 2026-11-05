@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rayan Benhabiles - Software Engineering Student · Full-stack & Data</title>
+  <meta name="description" content="Portfolio interactif de Rayan Benhabiles, étudiant ingénieur logiciel (Epitech), Full-stack & Data. Recherche un stage à Montréal, mars à août 2028.">
+  <meta property="og:title" content="Rayan Benhabiles - Full-stack & Data">
+  <meta property="og:description" content="Rust, Flutter, React, FastAPI, Power BI. Stage à Montréal · mars à août 2028.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta name="theme-color" content="#7377B5">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='4' y='4' width='56' height='56' fill='none' stroke='%237377B5' stroke-width='5'/><text x='32' y='42' font-family='Arial' font-size='24' text-anchor='middle' fill='%231B1B2F'>RB</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <!-- Intro loader: the CV frame draws itself -->
+  <div class="loader" aria-hidden="true">
+    <svg class="loader-frame" viewBox="0 0 200 260" preserveAspectRatio="none"><path d="M120 6 H6 V254 H120" /></svg>
+    <div class="loader-name"><span>RAYAN</span><span>BENHABILES</span></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a href="#hero" class="nav-logo" aria-label="Rayan Benhabiles - accueil">RB<span>.</span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Expériences</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="#about" data-i18n="nav.about">Profil</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang" role="group" aria-label="Langue / Language">
+        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <span class="lang-pill" aria-hidden="true"></span>
+      </div>
+      <a class="btn btn-small" id="cvLink" href="assets/cv/CV_rayan_francais.pdf" download>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+        <span data-i18n="nav.cv">CV</span>
+      </a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO - mirrors the CV header -->
+    <section class="hero" id="hero">
+      <div class="hero-frame" aria-hidden="true"><span class="f-top"></span><span class="f-left"></span><span class="f-bottom"></span></div>
+      <div class="hero-grid">
+        <div class="hero-main">
+          <p class="eyebrow reveal"><span class="dot"></span><span data-i18n="hero.available">Disponible · Stage à Montréal · mars à août 2028</span></p>
+          <h1 class="hero-name" aria-label="Rayan Benhabiles">
+            <span class="line"><span class="split">RAYAN</span></span>
+            <span class="line"><span class="split">BENHABILES</span></span>
+          </h1>
+          <div class="hero-band"><span data-i18n="hero.role">Étudiant ingénieur logiciel · Full-stack &amp; Data</span></div>
+          <p class="hero-summary reveal" data-i18n-html="hero.summary">Étudiant en dernière année à Epitech, je livre des produits complets : back-ends Rust et Python, front-ends Flutter et React, nettoyage de données automatisé et dashboards Power BI.</p>
+          <div class="hero-ctas reveal">
+            <a class="btn" href="#projects"><span data-i18n="hero.cta1">Voir mes projets</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">Me contacter</a>
+          </div>
+        </div>
+        <aside class="hero-side reveal">
+          <ul class="meta">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-i18n="hero.loc">Nîmes, France · Nationalité française</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:rayanbenhabiles9@gmail.com">rayanbenhabiles9@gmail.com</a></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 00-6 0C6.8 2.3 5.8 2.6 5.8 2.6a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004.4 9c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2v3.5"/></svg><a href="https://github.com/RayanDZ04" target="_blank" rel="noopener">github.com/RayanDZ04</a></li>
+          </ul>
+          <div class="terminal" aria-label="Terminal">
+            <div class="terminal-bar"><i></i><i></i><i></i><span>~/rayan</span></div>
+            <pre><code id="typed"></code><span class="caret"></span></pre>
+          </div>
+        </aside>
+      </div>
+      <a href="#stats" class="scroll-hint" aria-label="Défiler"><span></span></a>
+    </section>
+
+    <!-- KEY NUMBERS -->
+    <section class="stats" id="stats" aria-label="Chiffres clés">
+      <div class="stat reveal"><b data-count="1">0</b><span data-i18n="stats.s1">plateforme de billetterie conçue, codée et sécurisée seul</span></div>
+      <div class="stat reveal"><b data-count="4">0</b><span data-i18n="stats.s2">applications livrées pour Tikiya : API, mobile, 2 dashboards</span></div>
+      <div class="stat reveal"><b><span data-count="1">0</span><small data-i18n="stats.unit">sem/mois</small></b><span data-i18n="stats.s3">de travail économisées grâce à l'automatisation VBA</span></div>
+      <div class="stat reveal"><b data-count="760">0</b><span data-i18n="stats.s4">au TOEIC · français, anglais, arabe</span></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <h2 class="reveal" data-i18n="projects.title">Projets</h2>
+        <p class="section-lead reveal" data-i18n="projects.lead">Des produits complets, du noyau à l'interface. Cliquez sur une compétence plus bas pour filtrer.</p>
+      </div>
+
+      <div class="filters reveal" role="toolbar" aria-label="Filtrer les projets">
+        <button type="button" class="chip is-active" data-filter="all" data-i18n="filters.all">Tout</button>
+        <button type="button" class="chip" data-filter="rust">Rust</button>
+        <button type="button" class="chip" data-filter="flutter">Flutter</button>
+        <button type="button" class="chip" data-filter="react">React</button>
+        <button type="button" class="chip" data-filter="python">Python</button>
+        <button type="button" class="chip" data-filter="unreal">Unreal / C++</button>
+        <button type="button" class="chip" data-filter="data">Data</button>
+      </div>
+
+      <div class="projects">
+        <!-- TIKIYA (featured) -->
+        <article class="project project--featured reveal" data-tags="rust flutter postgresql docker redis jwt sql dart javascript" id="p-tikiya">
+          <div class="project-info">
+            <div class="project-top">
+              <img src="assets/img/tikiya-logo.png" alt="" width="40" height="40" class="project-logo">
+              <div>
+                <h3>Tikiya</h3>
+                <p class="project-kicker" data-i18n="tikiya.kicker">Billetterie en ligne · Projet personnel, réalisé seul</p>
+              </div>
+              <span class="badge badge-live" data-i18n="badge.ongoing">Déc. 2025 - Aujourd'hui</span>
+            </div>
+            <ul class="bullets">
+              <li data-i18n="tikiya.b1">Conception, développement et sécurisation de toute la plateforme en solo : API REST, application mobile et deux dashboards web.</li>
+              <li data-i18n="tikiya.b2">API Rust (Axum, Tokio, SQLx) sur PostgreSQL avec JWT, hachage Argon2 et double authentification TOTP.</li>
+              <li data-i18n="tikiya.b3">Paiement en ligne (CIB / Edahabia via Chargily) avec webhooks idempotents et billets électroniques en QR code.</li>
+              <li data-i18n="tikiya.b4">Application Flutter trilingue (FR / EN / AR, droite à gauche) et dashboards organisateurs en temps réel.</li>
+              <li data-i18n="tikiya.b5">Mise en production : rate limiting Redis, journal d'audit, tests de charge k6, Docker, Caddy, CI GitHub Actions.</li>
+            </ul>
+            <div class="arch" aria-label="Architecture">
+              <span class="node">Flutter</span><span class="wire"></span>
+              <span class="node">Caddy</span><span class="wire"></span>
+              <span class="node node-accent">Axum API</span><span class="wire"></span>
+              <span class="node">PostgreSQL</span>
+              <span class="node node-sub">Redis</span><span class="node node-sub">Chargily</span>
+            </div>
+            <div class="tags"><span>Rust</span><span>Axum</span><span>Tokio</span><span>SQLx</span><span>Flutter</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>k6</span></div>
+            <div class="project-links">
+              <a class="link" href="https://github.com/RayanDZ04/Tikiya" target="_blank" rel="noopener"><span data-i18n="links.code">Code source</span> ↗</a>
+            </div>
+          </div>
+          <div class="showcase">
+            <div class="tabs" role="tablist" aria-label="Captures Tikiya">
+              <button role="tab" aria-selected="true" aria-controls="tk-admin" id="tab-admin" data-i18n="tikiya.t1">Admin</button>
+              <button role="tab" aria-selected="false" aria-controls="tk-orga" id="tab-orga" tabindex="-1" data-i18n="tikiya.t2">Organisateur</button>
+              <button role="tab" aria-selected="false" aria-controls="tk-app" id="tab-app" tabindex="-1" data-i18n="tikiya.t3">App mobile</button>
+              <span class="tab-ink" aria-hidden="true"></span>
+            </div>
+            <div class="panels">
+              <div class="panel is-active" role="tabpanel" id="tk-admin" aria-labelledby="tab-admin">
+                <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>boss.tikiya · /dashboard</span></div>
+                  <img src="assets/img/dash.webp" alt="Dashboard admin Tikiya : KPI utilisateurs, billets, revenus et courbes sur 30 jours" loading="lazy" width="1440" height="900" data-zoom></div>
+              </div>
+              <div class="panel" role="tabpanel" id="tk-orga" aria-labelledby="tab-orga" hidden>
+                <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>pro.tikiya · /</span></div>
+                  <img src="assets/img/orga.webp" alt="Dashboard organisateur Tikiya : billets vendus par événement" loading="lazy" width="1440" height="900" data-zoom></div>
+              </div>
+              <div class="panel panel-phone" role="tabpanel" id="tk-app" aria-labelledby="tab-app" hidden>
+                <div class="phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen" id="phoneScreen">
+                    <button type="button" class="phone-launch" id="launchApp">
+                      <img src="assets/img/tikiya-logo.png" alt="" width="64" height="64">
+                      <span data-i18n="tikiya.launch">Lancer l'app Flutter</span>
+                      <small data-i18n="tikiya.launchSub">Build web réel · données de démo</small>
+                    </button>
+                  </div>
+                </div>
+                <p class="phone-note" data-i18n="tikiya.phoneNote">C'est la vraie application Flutter compilée pour le web, branchée sur un jeu de données de démonstration.</p>
+              </div>
+            </div>
+            <p class="demo-note" data-i18n="tikiya.demo">Captures réalisées avec des données de démonstration (aucune donnée réelle).</p>
+          </div>
+        </article>
+
+        <!-- RUST OS -->
+        <article class="project project--os reveal" data-tags="rust c" id="p-os">
+          <div class="project-info">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3"/></svg></span>
+              <div>
+                <h3 data-i18n="os.title">Système d'exploitation en Rust</h3>
+                <p class="project-kicker" data-i18n="os.kicker">Conçu de zéro · Projet de fin d'études</p>
+              </div>
+              <span class="badge badge-live" data-i18n="badge.os">2026 - Aujourd'hui</span>
+            </div>
+            <ul class="bullets">
+              <li data-i18n="os.b1">Développement de zéro d'un OS bare-metal en Rust (no_std) pour x86_64.</li>
+              <li data-i18n="os.b2">Ordonnanceur adaptatif qui ajuste la répartition des tâches selon la charge du système.</li>
+              <li data-i18n="os.b3">Gestion mémoire du noyau fondée sur le modèle d'ownership de Rust.</li>
+            </ul>
+            <div class="tags"><span>Rust no_std</span><span>x86_64</span><span>Bare-metal</span><span>Scheduler</span></div>
+          </div>
+          <div class="sched" aria-label="Simulation d'ordonnanceur adaptatif">
+            <div class="sched-head">
+              <span class="mono">kernel::sched - <b id="schedMode">round-robin</b></span>
+              <label class="mono" for="load"><span data-i18n="os.load">charge</span> <output id="loadOut">30%</output></label>
+            </div>
+            <input type="range" id="load" min="5" max="100" value="30" aria-describedby="schedHelp">
+            <canvas id="schedCanvas" width="640" height="220" role="img" aria-label="Visualisation de l'ordonnanceur"></canvas>
+            <p id="schedHelp" class="sched-help" data-i18n="os.help">Faites varier la charge : l'ordonnanceur passe du round-robin à des quanta adaptatifs par priorité.</p>
+          </div>
+        </article>
+
+        <!-- AREA -->
+        <article class="project reveal" data-tags="python jwt oauth" id="p-area">
+          <div class="project-media">
+            <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>area · /</span></div>
+              <img src="assets/img/area.webp" alt="Page d'accueil AREA : Automatise. Gagne du temps. Fais plus." loading="lazy" width="1440" height="900" data-zoom></div>
+            <div class="flow" aria-hidden="true">
+              <span class="flow-node">Gmail</span><span class="flow-line"><i></i></span><span class="flow-core">AREA</span><span class="flow-line"><i></i></span><span class="flow-node">Agenda</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AREA</h3>
+            <p class="project-kicker" data-i18n="area.kicker">Plateforme d'automatisation (type IFTTT) · Projet Epitech · 2026</p>
+            <ul class="bullets">
+              <li data-i18n="area.b1">Back-end FastAPI qui enchaîne actions et réactions entre Gmail et Google Agenda.</li>
+              <li data-i18n="area.b2">OAuth 2.0 Google côté serveur, JWT et planificateur exécutant les automatisations toutes les 30 s.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>FastAPI</span><span>OAuth 2.0</span><span>JWT</span><span>SQLAlchemy</span></div>
+            <div class="project-links"><a class="link" href="https://github.com/RayanDZ04/area_rattrapage" target="_blank" rel="noopener"><span data-i18n="links.code">Code source</span> ↗</a></div>
+          </div>
+        </article>
+
+        <!-- CREST -->
+        <article class="project project--reverse reveal" data-tags="react javascript" id="p-crest">
+          <div class="project-media">
+            <div class="browser browser-dark"><div class="browser-bar"><i></i><i></i><i></i><span>crest-fighting-center</span></div>
+              <img src="assets/img/crest.webp" alt="Site Crest Fighting Center : Crest aims for the top" loading="lazy" width="1440" height="900" data-zoom></div>
+          </div>
+          <div class="project-info">
+            <h3>Crest Fighting Center</h3>
+            <p class="project-kicker" data-i18n="crest.kicker">Site vitrine · Helsinki · 2026</p>
+            <ul class="bullets">
+              <li data-i18n="crest.b1">Conception et développement d'un site vitrine responsive pour une salle de sports de combat de 1 300 m².</li>
+              <li data-i18n="crest.b2">Animations Framer Motion, sections programmes, avis, FAQ et localisation.</li>
+            </ul>
+            <div class="tags"><span>React</span><span>Framer Motion</span><span>Vite</span></div>
+            <div class="project-links"><a class="link" href="https://github.com/RayanDZ04/crest_center" target="_blank" rel="noopener"><span data-i18n="links.code">Code source</span> ↗</a></div>
+          </div>
+        </article>
+
+        <!-- GAME -->
+        <article class="project project--game reveal" data-tags="c unreal" id="p-game">
+          <div class="project-info">
+            <h3>Rick 7533</h3>
+            <p class="project-kicker" data-i18n="game.kicker">Jeu de plateforme 3D · Unreal Engine 5 · C++ et Blueprints</p>
+            <ul class="bullets">
+              <li data-i18n="game.b1">Niveau complet : plateformes qui s'effondrent, plateformes mobiles, barres laser, monstres et checkpoints.</li>
+              <li data-i18n="game.b2">Gameplay codé en C++ (plateformes, HUD, drapeaux) et en Blueprints : 3 vies, score, 39 graines à collecter.</li>
+              <li data-i18n="game.b3">Portail de fin qui ne s'ouvre qu'à 5000 points, boutique pour acheter un double saut ou une vie.</li>
+              <li data-i18n="game.b4">Interface complète : menu, règles, pause, boutique, game over et victoire.</li>
+            </ul>
+            <div class="tags"><span>Unreal Engine 5</span><span>C++</span><span>Blueprints</span><span>UMG</span></div>
+          </div>
+          <div class="gallery" id="rickGallery">
+            <div class="gallery-main">
+              <video id="rickVideo" src="assets/video/rick-gameplay.mp4" poster="assets/img/rick-poster.webp" width="1280" height="720" muted loop playsinline preload="metadata" aria-label="Gameplay de Rick 7533"></video>
+              <img src="assets/img/rick-level.webp" alt="Vue du niveau de Rick 7533" width="1280" height="720" loading="lazy" data-zoom id="rickMain" hidden>
+              <button type="button" class="video-toggle" id="rickToggle" aria-label="Pause"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-pause" d="M8 5v14M16 5v14"/><path class="i-play" d="M7 4l13 8-13 8z"/></svg></button>
+              <span class="video-badge mono" data-i18n="game.live">Gameplay réel</span>
+            </div>
+            <div class="gallery-thumbs" role="group" aria-label="Captures Rick 7533">
+              <button type="button" aria-pressed="true" data-video data-i18n-label="game.a0"><img src="assets/img/rick-play-thumb.webp" alt="" width="160" height="90" loading="lazy"><span class="thumb-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg></span></button>
+              <button type="button" aria-pressed="false" data-src="assets/img/rick-level.webp" data-alt-key="game.a1" data-i18n-label="game.a1"><img src="assets/img/rick-level.webp" alt="" width="160" height="90" loading="lazy"></button>
+              <button type="button" aria-pressed="false" data-src="assets/img/rick-title.webp" data-alt-key="game.a2" data-i18n-label="game.a2"><img src="assets/img/rick-title.webp" alt="" width="160" height="90" loading="lazy"></button>
+              <button type="button" aria-pressed="false" data-src="assets/img/rick-rules.webp" data-alt-key="game.a3" data-i18n-label="game.a3"><img src="assets/img/rick-rules.webp" alt="" width="160" height="90" loading="lazy"></button>
+              <button type="button" aria-pressed="false" data-src="assets/img/rick-shop.webp" data-alt-key="game.a4" data-i18n-label="game.a4"><img src="assets/img/rick-shop.webp" alt="" width="160" height="90" loading="lazy"></button>
+              <button type="button" aria-pressed="false" data-src="assets/img/rick-gameover.webp" data-alt-key="game.a5" data-i18n-label="game.a5"><img src="assets/img/rick-gameover.webp" alt="" width="160" height="90" loading="lazy"></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <h2 class="reveal" data-i18n="exp.title">Expériences</h2>
+      </div>
+      <ol class="timeline">
+        <li class="tl-item reveal" data-tags="data">
+          <span class="tl-date">2024</span>
+          <div>
+            <h3 data-i18n="exp.tp.t">Stagiaire Data, Transitions Pro Occitanie</h3>
+            <p class="tl-stack" data-i18n="exp.tp.s">Stage de 1re année · Excel VBA · Power BI</p>
+            <p data-i18n="exp.tp.d1">Nettoyage et normalisation des bases de données, puis automatisation complète avec des macros VBA : environ une semaine de travail gagnée par mois pour les équipes.</p>
+            <p data-i18n="exp.tp.d2">Tableaux de bord Power BI actualisés automatiquement, pour des indicateurs toujours à jour.</p>
+            <div class="vba" aria-hidden="true">
+              <div class="vba-row"><span class="mono">raw.xlsx</span><div class="vba-bar"><i></i></div><span class="mono">clean ✓</span></div>
+            </div>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-date">2023-2026</span>
+          <div>
+            <h3 data-i18n="exp.jobs.t">Jobs étudiants en parallèle des études</h3>
+            <p data-i18n="exp.jobs.d">Quick, Auchan, Restaurant Heïta et STO Nîmes : travail en équipe et service client dans des environnements à forte cadence.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <h2 class="reveal" data-i18n="skills.title">Compétences</h2>
+        <p class="section-lead reveal" data-i18n="skills.lead">Cliquez sur une compétence pour voir où je l'ai utilisée.</p>
+      </div>
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h3 data-i18n="skills.lang">Langages</h3>
+          <div class="skill-chips">
+            <button type="button" data-skill="rust">Rust</button><button type="button" data-skill="c">C</button><button type="button" data-skill="c">C++</button><button type="button" data-skill="python">Python</button><button type="button" data-skill="javascript">JavaScript</button><button type="button" data-skill="dart">Dart</button><button type="button" data-skill="sql">SQL</button>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Back-end</h3>
+          <div class="skill-chips">
+            <button type="button" data-skill="rust">Axum</button><button type="button" data-skill="rust">Tokio</button><button type="button" data-skill="python">FastAPI</button><button type="button" data-skill="python">REST API</button><button type="button" data-skill="oauth">OAuth 2.0</button><button type="button" data-skill="jwt">JWT</button>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 data-i18n="skills.front">Front-end &amp; mobile</h3>
+          <div class="skill-chips">
+            <button type="button" data-skill="flutter">Flutter</button><button type="button" data-skill="react">React</button><button type="button" data-skill="react">Vite</button>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Data &amp; DevOps</h3>
+          <div class="skill-chips">
+            <button type="button" data-skill="data">Power BI</button><button type="button" data-skill="data">Excel VBA</button><button type="button" data-skill="postgresql">PostgreSQL</button><button type="button" data-skill="redis">Redis</button><button type="button" data-skill="docker">Docker</button><button type="button" data-skill="docker">GitHub Actions</button><button type="button" data-skill="docker">Caddy</button><button type="button" data-skill="docker">Linux</button><button type="button" data-skill="docker">k6</button>
+          </div>
+        </div>
+      </div>
+      <div class="skill-result" aria-live="polite" id="skillResult"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <span class="section-index">04</span>
+        <h2 class="reveal" data-i18n="about.title">Profil</h2>
+      </div>
+      <div class="about">
+        <div class="about-card reveal">
+          <h3 data-i18n="about.edu">Formation</h3>
+          <div class="edu">
+            <b data-i18n="about.epitech">Epitech - Expert en technologies de l'information (Bac+5)</b>
+            <span data-i18n="about.epitechWhere">Toulouse, France · 2023 - 2028</span>
+            <div class="edu-bar" aria-hidden="true"><i style="--p:.62"></i></div>
+          </div>
+          <div class="edu">
+            <b data-i18n="about.bac">Baccalauréat - Spécialité Mathématiques &amp; Physique</b>
+            <span data-i18n="about.bacWhere">Lycée International Alexandre Dumas, Alger · 2022</span>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <h3 data-i18n="about.langs">Langues</h3>
+          <ul class="langs">
+            <li><span data-i18n="about.fr">Français</span><i class="lvl" style="--l:1"></i></li>
+            <li><span data-i18n="about.en">Anglais (TOEIC 760)</span><i class="lvl" style="--l:.78"></i></li>
+            <li><span data-i18n="about.ar">Arabe</span><i class="lvl" style="--l:.9"></i></li>
+          </ul>
+        </div>
+        <div class="about-card reveal">
+          <h3 data-i18n="about.interests">Centres d'intérêt</h3>
+          <ul class="interests">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5 6c3 3 3 9 0 12M19 6c-3 3-3 9 0 12"/></svg><span data-i18n="about.tennis">Tennis</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="14" cy="4" r="2"/><path d="M9 21l3-6 3 2 1 4M6 12l4-4 4 2 3 3M12 15l-2-5"/></svg><span data-i18n="about.athletics">Athlétisme</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10a5 5 0 015-5h3a4 4 0 014 4v5a4 4 0 01-4 4H9a3 3 0 01-3-3z"/><path d="M6 13h5M10 18v3h6v-3"/></svg><span data-i18n="about.boxing">Boxe</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <p class="eyebrow eyebrow-light reveal" data-i18n="contact.eyebrow">Montréal · mars à août 2028</p>
+        <h2 class="reveal" data-i18n-html="contact.title">Construisons quelque chose<br>ensemble.</h2>
+        <p class="reveal" data-i18n="contact.text">Je recherche un stage full-stack (front / back) ou data. Écrivez-moi, je réponds vite.</p>
+        <div class="contact-actions reveal">
+          <button type="button" class="btn btn-light" id="copyEmail" data-email="rayanbenhabiles9@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 012-2h8"/></svg>
+            <span>rayanbenhabiles9@gmail.com</span>
+          </button>
+          <a class="btn btn-outline-light" href="mailto:rayanbenhabiles9@gmail.com" data-i18n="contact.mail">Envoyer un e-mail</a>
+          <a class="btn btn-outline-light" href="https://github.com/RayanDZ04" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <div class="contact-cv reveal">
+          <a href="assets/cv/CV_rayan_francais.pdf" download>CV - Français (PDF)</a>
+          <a href="assets/cv/CV_rayan_english.pdf" download>Résumé - English (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Rayan Benhabiles</span>
+    <span data-i18n="footer.built">Codé à la main en HTML, CSS &amp; JavaScript, sans framework.</span>
+    <a href="#hero" data-i18n="footer.top">Haut de page ↑</a>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Image agrandie">
+    <button type="button" class="icon-btn" data-close aria-label="Fermer"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <img alt="">
+  </dialog>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

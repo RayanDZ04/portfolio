@@ -1,0 +1,80 @@
+[
+ {
+  "id": "1",
+  "organizer_id": "o1",
+  "title": "Festival Raï d'Oran",
+  "description": "Billetterie officielle Tikiya.",
+  "location": "Oran",
+  "event_date": "2028-03-10T19:30:00Z",
+  "price": 2500,
+  "capacity": 4000,
+  "cover_url": null,
+  "category": "musique",
+  "created_at": "2026-11-01T10:00:00Z"
+ },
+ {
+  "id": "2",
+  "organizer_id": "o1",
+  "title": "Nuit du Chaâbi — Alger",
+  "description": "Billetterie officielle Tikiya.",
+  "location": "Alger",
+  "event_date": "2028-04-13T19:30:00Z",
+  "price": 4000,
+  "capacity": 6000,
+  "cover_url": null,
+  "category": "musique",
+  "created_at": "2026-11-01T10:00:00Z"
+ },
+ {
+  "id": "3",
+  "organizer_id": "o1",
+  "title": "Stand-up Night Constantine",
+  "description": "Billetterie officielle Tikiya.",
+  "location": "Constantine",
+  "event_date": "2028-05-16T19:30:00Z",
+  "price": 1500,
+  "capacity": 800,
+  "cover_url": null,
+  "category": "humour",
+  "created_at": "2026-11-01T10:00:00Z"
+ },
+ {
+  "id": "4",
+  "organizer_id": "o1",
+  "title": "Derby MCA vs USMA",
+  "description": "Billetterie officielle Tikiya.",
+  "location": "Stade du 5 Juillet, Alger",
+  "event_date": "2028-06-19T19:30:00Z",
+  "price": 1000,
+  "capacity": 9000,
+  "cover_url": null,
+  "category": "sport",
+  "created_at": "2026-11-01T10:00:00Z"
+ },
+ {
+  "id": "5",
+  "organizer_id": "o1",
+  "title": "Expo Tech Algiers 2026",
+  "description": "Billetterie officielle Tikiya.",
+  "location": "Alger",
+  "event_date": "2028-07-22T19:30:00Z",
+  "price": 800,
+  "capacity": 2500,
+  "cover_url": null,
+  "category": "conference",
+  "created_at": "2026-11-01T10:00:00Z"
+ },
+ {
+  "id": "6",
+  "organizer_id": "o1",
+  "title": "Gnawa Sessions Béjaïa",
+  "description": "Billetterie officielle Tikiya.",
+  "location": "Béjaïa",
+  "event_date": "2028-03-25T19:30:00Z",
+  "price": 2000,
+  "capacity": 1200,
+  "cover_url": null,
+  "category": "musique",
+  "created_at": "2026-11-01T10:00:00Z"
+ }
+]
